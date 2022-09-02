@@ -1,7 +1,7 @@
 How to Commit a PR from your local device using git commands 
 
 - Before using git commands you have to download the latest version of git on your device 
--for that watch the video below , it will help you with installing git to making your first PR
+- for that watch the video below , it will help you with installing git to making your first PR
    - https://www.youtube.com/watch?v=F7Zsz7UVePA&t=442s&ab_channel=Codeforza
 - Fork the project:
   Click the gray `Fork` button in the top right of this page. This creates _your_ copy of the project and saves it as a new repository in your github account
