@@ -8,4 +8,4 @@
 - String to Integer (atoi):  https://leetcode.com/problems/string-to-integer-atoi/
 - Valid Parentheses: https://leetcode.com/problems/valid-parentheses/
 - Number of pairs: https://practice.geeksforgeeks.org/problems/number-of-pairs-1587115620/1
-- TWO SUM : https://leetcode.com/problems/two-sum/
+- FOUR SUM : https://leetcode.com/problems/four-sum/
