@@ -6,3 +6,7 @@
   My name is Abhishek Jha
   I am interested in MERN Stack (MogoDB ,Express ,React ,Node) and AI
 ```
+```bash
+  My name is Rodger 
+  I am interested in Machine Learning 
+```
