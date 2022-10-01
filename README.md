@@ -9,6 +9,10 @@ How to Commit a PR from your local device using git commands
 - Click on the green `Code` button, then either the HTTPS or SSH option and, click the icon to copy the URL. Now you have a copy of the project. Thus, you can play around with it locally on your computer.
 
 - Run the following commands into a terminal window (Command Prompt, Powershell, Terminal, Bash, ZSH). Do this to download the forked copy of this repository to your computer.
+- 
+- ```bash
+  git clone https://github.com/YOUR_GITHUB_USERNAME/hacktoberfest-practice.git
+```
 
 - Switch to the cloned folder. You can paste this command into the same terminal window.
 
