@@ -7,3 +7,4 @@
 - CONTAINER WITH MOST WATER : https://leetcode.com/problems/container-with-most-water/
 - String to Integer (atoi):  https://leetcode.com/problems/string-to-integer-atoi/
 - Valid Parentheses: https://leetcode.com/problems/valid-parentheses/
+- Number of pairs: https://practice.geeksforgeeks.org/problems/number-of-pairs-1587115620/1
