@@ -1,14 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #22c1c3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #353434;  /* fallback for old browsers */
+    background-color: #171717;
+    background-image: url(https://codeplusplus.acmvit.in/static/media/grid.a8e9cc9ddce1bada2875.svg);
 
 }
 
 
 h1{
-    background:#2980b9;
+    background:#3b3f42;
     color:white;
     margin: 0;
     padding: 10px 20px;
@@ -28,13 +28,13 @@ ul{
 
 li{
     background: white;
-    height: 40px;
+    height: 50px;
     line-height:40px;
     color:#666;
 }
 
 li:nth-child(2n){
-    background: #f7f7f7;
+    background: rgb(233, 233, 233);
 }
 
 span{
