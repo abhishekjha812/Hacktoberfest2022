@@ -41,3 +41,8 @@
   My name is Ritik Jha
   I am interested in web development and competitive programming
 ```
+
+```bash
+  My name is Aditya More
+  I am interested in web development, open-source contributions and competitive programming.
+```
