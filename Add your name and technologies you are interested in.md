@@ -51,3 +51,7 @@
   My name is Aditya More
   I am interested in web development, open-source contributions and competitive programming.
 ```
+```bash
+  My name is Atinder Kumar
+  I am interested in Web Development
+```
