@@ -41,3 +41,8 @@
   My name is Ritik Jha
   I am interested in web development and competitive programming
 ```
+
+```bash
+  My name is Chirag Chandnani
+  I am interested in web development, ML and competitive programming
+```
