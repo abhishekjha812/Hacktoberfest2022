@@ -26,12 +26,14 @@ How to Commit a PR from your local device using git commands
   git checkout -b <name-of-new-branch>
 ```
 
-- Open the `README.md` file
+- Open the `Add your name and technologies you are interested in.md` file
 
 - **Add your name to the section that matches your Initial in [this list](https://github.com/EddieHubCommunity/hacktoberfest-practice#hacktoberfest-community). Then, add your name in alphabetical order. Then save your changes.**
 
 - For example
-  `- [Full Name](https://github.com/your-username)`
+  - ```bash
+       ADD YOUR NAME AND TECHNOLOGIES YOU ARE INTRESTED IN
+    ```
 
 - Stage your changes.
 
