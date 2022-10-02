@@ -46,3 +46,8 @@
   My name is Chirag Chandnani
   I am interested in web development, ML and competitive programming
 ```
+
+```bash
+  My name is Aditya More
+  I am interested in web development, open-source contributions and competitive programming.
+```
