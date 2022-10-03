@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*? light mode colors */
+:root {
+    --background: #e1e1e9;
+    --calc-background: #e7e8ee;
+    --calc-shadow: 30px 30px 55px #CCC;
+    --num-background: linear-gradient(to bottom right, #c0c5d1,#edeef5);
+    --num-shadow: inset 2px 2px 3px #ebebf3,  inset 4px 4px 15px #cacfd6, 3px 3px 12px #c2c7d4;
+    --eql-background: linear-gradient(to bottom right, #d36d12,#ed9d1e);
+    --eql-shadow: inset 1px 1px 3px #f98500, inset 4px 4px 15px #b35300, inset -1px -1px 3px #cc6308, 3px 3px 5px #c2c7d4;
+    --c-background: linear-gradient(to bottom right, #8b94a1,#eff0f7);
+    --c-shadow: inset 1px 1px 1px #c8ced9, inset 2px 2px 8px #cacfd6, inset -2px -2px 3px #b4bbc7, 3px 3px 12px #c2c7d4;
+    --font-color: #222;
+    --mode-bk: #0025;
+}
+/*? dark mode colors */
+[data-theme="dark"] {
+    --calc-background: #1e212a;
+    --calc-shadow: 30px 30px 55px #888;
+    --num-background: linear-gradient(to bottom right, #292d38,#3c3c44);
+    --num-shadow: inset 1px 1px 1px #393c4a,  inset 4px 4px 15px #20232d, 3px 3px 5px #181b24;
+    --eql-shadow: inset 1px 1px 2px #f9aa2d99, inset 4px 4px 15px #a54e04, 3px 3px 5px #181b24;
+    --c-background: linear-gradient(to bottom right, #494f5c,#6f7587);
+    --c-shadow: inset 1px 1px 1px #656b7b, inset 4px 4px 15px #333942, 3px 3px 5px #181b24;
+    --font-color: #FFF;
+    --mode-bk: #FFF2;
+}
+body {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: var(--background);
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+}
+.calculator {
+    position: relative;
+    width: 250px;
+    height: 530px;
+    background-color: var(--calc-background);
+    border-radius: 35px;
+    box-shadow: var(--calc-shadow);
+    color: var(--font-color);
+}
+#res {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    font-size: 35px;
+    padding: 0px 12px;
+    outline: none;
+    border: none;
+    color: var(--font-color);
+    background: transparent;
+    font-family: Roboto;
+    text-align: right;
+}
+.buttons {
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 12px;
+}
+.buttons div {
+    user-select: none;
+    cursor: pointer;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: var(--num-shadow);
+    background: var(--num-background);
+}
+#zero {
+    grid-column: 1 / 3;
+}
+#add, #eql, #sub, #mul, #div {
+    background: var(--eql-background);
+    box-shadow: var(--eql-shadow);
+    color: #FFF;
+}
+#c, #pers, #del {
+    background: var(--c-background);
+    box-shadow: var(--c-shadow);
+}
+.mode {
+    position: absolute;
+    cursor: pointer;
+    left: 12px;
+    top: 12px;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    background: var(--mode-bk);
+}
+.fa-moon {
+    color: #FFF;
+}
+.fa-sun {
+    color: #FFE551;
+}
