@@ -1,6 +1,6 @@
 * {
 
-    font: bold 14px Arial, sans-serif;
+    font: bold italic 14px Arial, sans-serif;
     
     
 }
@@ -47,7 +47,7 @@ button.reset{
 
     background: #ff9fa8;
     box-shadow: 0px 4px #ff7c87;
-    color: white;
+    color: grey;
 
 }
 button.eval{
