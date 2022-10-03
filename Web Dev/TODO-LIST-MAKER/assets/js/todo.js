@@ -30,3 +30,20 @@ $("input[type='text']").keypress(function (event) {
 $(".fa-plus").click(function () {
    $("input[type='text']").fadeToggle();
 });
+
+
+
+
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+ }
+
+
+
+ $(".moon").on("click" , function () {
+    
+   $(this).toggleClass("compeleteds");
+
+});
