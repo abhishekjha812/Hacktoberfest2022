@@ -72,6 +72,13 @@
   My name is Rakesh Kumar Lenka
   I am interested in Data science and machile learning.
 ```
+
+
+```bash
+My name is Aditya Prakash
+I am intrested in Web Devolopment and Machine Learning.
+```
+
 ```bash
 
    My name is Manisha Parichha
