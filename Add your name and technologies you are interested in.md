@@ -56,17 +56,21 @@
   My name is Aditya More
   I am interested in web development, open-source contributions and competitive programming.
 ```
+
 ```bash
   My name is Vraj Patel
   I am interested in Cloud Computing, Quantum Computing, Quantum Processor.
 ```
+
 ```bash
   My name is Atinder Kumar
   I am interested in Web Development
 ```
+
 ```bash
   My name is Hans Upadhyay
   I am interested in Web Development
+```
 
 ```bash
   My name is Rakesh Kumar Lenka
@@ -75,14 +79,13 @@
 
 
 ```bash
-My name is Aditya Prakash
-I am intrested in Web Devolopment and Machine Learning.
+  My name is Aditya Prakash
+  I am intrested in Web Devolopment and Machine Learning.
 ```
 
 ```bash
-
-   My name is Manisha Parichha
-   I am interested in Web Development and Cloud Computing
+  My name is Manisha Parichha
+  I am interested in Web Development and Cloud Computing
 ```
 
 ```bash
@@ -94,3 +97,7 @@ I am intrested in Web Devolopment and Machine Learning.
   I am interested in Full Stack Development
 ```
 
+```bash
+  My name is Mridul Panda
+  I am interested in Frontend Development
+```
