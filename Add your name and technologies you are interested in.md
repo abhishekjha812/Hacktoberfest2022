@@ -52,6 +52,10 @@
   I am interested in web development, open-source contributions and competitive programming.
 ```
 ```bash
+  My name is Vraj Patel
+  I am interested in Cloud Computing, Quantum Computing, Quantum Processor.
+```
+```bash
   My name is Atinder Kumar
   I am interested in Web Development
 ```
