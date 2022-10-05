@@ -1,3 +1,7 @@
+```bash
+Folks this repo has been excluded from Hacktoberfest because of so many spammy PRs
+```
+
 How to Commit a PR from your local device using git commands 
 
 - Before using git commands you have to download the latest version of git on your device 
