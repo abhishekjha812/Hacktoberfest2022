@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/c2be89540f.js" crossorigin="anonymous"></script>  
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="css/widescreen.css">
+    
+    <!-- css links -->
+    <title>EdgeLedger | Accounting and Investment</title>
+</head>
+<body id="home">
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary">
+                <i class="fas fa-book-open"></i>Edge</span>Ledger
+        </h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="showcase">
+        <div class="showcase-content">
+          <h1 class="l-heading">The Sky Is The Limit</h1>
+          <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Alias minus eius repellat veritatis tempora culpa.
+          </p>
+          <a href="#what" class="btn">Read More</a>
+        </div>
+    </header>
+
+    <section id="what" class="bg-light py-1">
+     <div class="container text-center">
+         <h2 class="m-heading">
+             <span class="text-primary">What</span>
+             We Do  
+         </h2>
+         <div class="items">
+             <div class="item">
+              <i class="fas fa-university fa-2x"></i>
+              <div>
+                  <h2>Investment Banking</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!
+                  </p>
+              </div>
+             </div>
+             <div class="item">
+                <i class="fas fa-book-reader fa-2x"></i>
+                <div>
+                    <h2>Portfolio Mnagement</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!
+                    </p>
+                </div>
+             </div>
+             <div class="item">
+                <i class="fas fa-pencil-alt fa-2x"></i>
+                <div> 
+                    <h2>Tax & Custodial</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error!
+                    </p>
+                </div>
+             </div>
+         </div>
+     </div>
+    </section>
+
+    <!-- who we are section -->
+     <section id="who">
+        <div class="who-img"></div>
+        <div class="who-content bg-dark p-2">
+            <h2 class="m-heading"><span class="text-primary">Who </span>We Are</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eligendi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, itaque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, cupiditate.
+            </p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Mark Smith:CEO</li>
+                <li>Shannon Johonson:CFO</li>
+                <li>John Corbelt:Lead Accountant</li>
+                <li>Janet Williams</li>
+                <li>Kara Jackson</li>
+            </ul>
+        </div>
+     </section>
+
+     <!-- clients section -->
+     <section id="clients py-1">
+         <div class="container">
+             <h2 class="m-heading text-center py-2"><span class="text-primary">Our</span> Clients</h2>
+             <div class="client-items py-1">
+                 <div><img src="./img/logos/logo1.png" alt="CLIENT"></div>
+                 <div><img src="./img/logos/logo2.png" alt="CLIENT"></div>
+                 <div><img src="./img/logos/logo3.png" alt="CLIENT"></div>
+                 <div><img src="./img/logos/logo4.png" alt="CLIENT"></div>
+                 <div><img src="./img/logos/logo5.png" alt="CLIENT"></div>
+             </div>
+         </div>
+     </section>
+
+     <!-- conatct us section -->
+
+     <section id="contact">
+         <div class="contact-form bg-primary p-2">
+             <h2 class="m-heading">Conatct Us</h2>
+             <p>Please use the form below to conatct us </p>
+             <form>
+                 <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="20" rows="4"></textarea>
+                </div>
+                   
+                    <input type="submit" class="btn-dark" value="send">      
+             </form>
+         </div>
+         <div class="map"></div>
+        </section>
+         <!-- footer section -->
+
+        <footer id="footer" class="bg-dark text-center p-1">
+            <div class="container">
+                <p>Copyright &copy; 2019, EdgeLedger ,All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- jqury cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <!-- local js -->
+            <script src="./js/main.js"></script>
+            <!-- google maps -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrP_Wxm-aQW3yDWO6WXrs-Yd7aVvg0zvE&callback=initMap&v=weekly"
+            async defer
+          ></script>
+         </div>
+  
+  </body>
+</html>
+
+
+<!-- AIzaSyBrP_Wxm-aQW3yDWO6WXrs-Yd7aVvg0zvE -->
