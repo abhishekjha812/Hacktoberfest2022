@@ -1,10 +1,13 @@
-
 <!DOCTYPE html>
 <html>
   
 <head>
  
     <style>
+	  body{
+	background-color:black;
+
+	  }
         table {
             border: 1px solid black;
             margin-left: auto;
@@ -14,7 +17,7 @@
         input[type="button"] {
             width: 100%;
             padding: 20px 40px;
-            background-color: green;
+            background-image:url('data:image/jpeg;base64,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');
             color: white;
             font-size: 24px;
             font-weight: bold;
@@ -30,6 +33,8 @@
             border-radius: 5px;
             border: 2px solid black;
         }
+		calcu{
+		align-items:center;}
     </style>
 </head>
 <!-- create table -->
@@ -78,7 +83,7 @@
             <td><input type="button" value="." onclick="dis('.')" 
                         onkeydown="myFunction(event)"> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"> </td>
+            <td><input type="button" value="=" onclick="myFunction.display.result=eval(myFunction.display.result)"> </td>
   
             <td><input type="button" value="+" onclick="dis('+')" 
                         onkeydown="myFunction(event)"> </td>
@@ -111,14 +116,6 @@
                 solve();
             }
         }
-  
-        function solve() {
-            let x = document.getElementById("result").value
-            let y = math.evaluate(x)
-            document.getElementById("result").value = y
-        }
-  
-
         function clr() {
             document.getElementById("result").value = ""
         }
@@ -126,3 +123,4 @@
 </body>
   
 </html>
+
