@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/9_calculator.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(255, 255, 255);
+        }
+
+        .container {
+            width: 42%;
+            height: 65vh;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgb(61, 60, 60);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486);
+
+        }
+
+        .display #screen {
+            width: 97%;
+            height: 70px;
+            font-size: 35px;
+            outline: none;
+            border: none;
+            text-align: right;
+            padding-right: .5em;
+            background: #ecf0f3;
+            border-radius: 5px;
+            box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+        }
+
+        .btns {
+            width: 100%;
+            display: flex;
+            margin-top: 1.7em;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btns .row button {
+            width: 90px;
+            height: 55px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            border-radius: 4px;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0),
+                -5px -5px 8px rgb(78, 78, 78);
+            transition: .1s;
+        }
+
+        .btns .row button:hover {
+            box-shadow: inset 5px 5px 8px rgb(58, 58, 58),
+                inset -5px -5px 8px rgba(255, 255, 255, 0.685);
+            background-color: white;
+        }
+
+        #ce {
+            background: rgb(245, 99, 99);
+            color: white;
+
+        }
+
+        #ce:hover {
+            box-shadow: inset 5px 5px 8px rgb(240, 100, 100),
+                inset -5px -5px 8px rgb(255, 67, 67)
+        }
+
+        #ac {
+            background: rgb(144, 243, 188);
+        }
+
+        #s {
+            background: rgb(65, 162, 201);
+        }
+
+        #e {
+            background: orangered;
+        }
+
+        .tooltip {
+            visibility: hidden;
+        }
+
+        .display {
+            width: 550px;
+            height: 120px;
+            float: right;
+        }
+
+        #mic {
+            height: 30px;
+            width: 30px;
+            float: left;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2baFGpxHvCn4gu1mdPIAGk__Acsjw52GeiA&usqp=CAU);
+            background-size: 100% 100%;
+            margin-left: 35px;
+            margin-top: 15px;
+            margin: 20px;
+            border-radius: 50%;
+            animation: mic-animation 1.5s infinite;
+        }
+
+
+        @keyframes mic-animation {
+
+            0% {
+                transform: scale(0.9);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px white;
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+        <div class="container-fluid">
+            <div class="display">
+                <input id="screen" type="text" placeholder="0">
+            </div>
+            <div id="output-microphone">
+                <span id="mic"></span>
+                <!-- <span class="tooltip"></span> -->
+            </div>
+            <div class="btns">
+                <div class="row">
+                    <button id="ce" onclick="backspace()">CE</button>
+                    <button id="s" onclick="factorial()">x!</button>
+                    <button id="s" class="btn">(</button>
+                    <button id="s" class="btn">)</button>
+                    <button id="s" class="btn">%</button>
+                    <button id="ac" onclick="screen.value=''">AC</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="pi">π</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button id="s" class="btn">÷</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button id="s" class="btn">×</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="sqrt()">&#8730;</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button id="s" class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span
+                            style="position: relative; bottom: .4em; right: .1em;">y</span></button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button id="e" onclick="screen.value=eval(screen.value)">=</button>
+                    <button id="s" class="btn">+</button>
+                </div>
+
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+
+<script>
+    var screen = document.querySelector('#screen');
+    var btn = document.querySelectorAll('.btn');
+
+    for (item of btn) {
+        item.addEventListener('click', (e) => {
+            btntext = e.target.innerText;
+            // if (btntext == '×') {
+            //     btntext = '*';
+            // }
+            if (btntext == '÷') {
+                btntext = '/';
+            }
+            screen.value += btntext;
+        });
+    }
+    function sin() {
+        screen.value = Math.sin(screen.value);
+    }
+    function cos() {
+        screen.value = Math.cos(screen.value);
+    }
+    function tan() {
+        screen.value = Math.tan(screen.value);
+    }
+    function log() {
+        screen.value = Math.log(screen.value);
+    }
+    
+    function sine(degree) {
+        // alert(degree);
+        screen.value = Math.sin(degree);
+    }
+    function cos(degree) {
+        screen.value = Math.cos(degree);
+    }
+    function tan(degree) {
+        screen.value = Math.tan(degree);
+    }
+    function pow(degree) {
+        screen.value = Math.pow(degree, 2);
+    }
+    function sqrt() {
+        screen.value = Math.sqrt(screen.value, 2);
+    }
+    function log(degree) {
+        screen.value = Math.log(degree);
+    }
+    function pi() {
+        screen.value = 3.14159265359;
+    }
+    function e() {
+        screen.value = 2.71828182846;
+    }
+    function factorial() {
+        var i, num, f = 1;
+        num = screen.value;
+        for (i = 1; i <= num; i++) {
+            f = f * i;
+        }
+        i = i - 1;
+        screen.value = f;
+    }
+
+    function backspace() {
+        screen.value = screen.value.substr(0, screen.value.length - 1);
+    }
+
+    var microphone = document.getElementById('mic');
+    microphone.onclick = function () {
+        microphone.classList.add("record");
+        var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+        recognition.lang = 'en-US';
+        recognition.start();
+        operations = {
+            "plus": "+", "minus": "-", "multiply": "*", "multiplied": "*", "divide": "/", "divided": "/", "reminder": "%"
+        }
+        recognition.onresult = function (event) {
+            var input = event.results[0][0].transcript;
+            for (property in operations) {
+                input = input.replace(property, operations[property])
+
+            }
+            const inputs = input.split(" ");
+            screen.value += input;
+            document.getElementById("screen").innerText = screen.value;
+            if (inputs[0] == "sin") {
+                setTimeout(function () {
+                    sine(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "cos") {
+                setTimeout(function () {
+                    cos(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "tangent") {
+                setTimeout(function () {
+                    tan(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "radian") {
+                setTimeout(function () {
+                    pi(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "antilog") {
+                setTimeout(function () {
+                    e(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "power") {
+                setTimeout(function () {
+                    pow(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else if(inputs[0] == "logarithm") {
+                setTimeout(function () {
+                    log(inputs[1]);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+            else {
+
+                setTimeout(function () {
+                    evaluate(input);
+                }, 2000);
+                // microphone.classList.remove("record");
+            }
+        }
+    }
+    function evaluate(input) {
+        try {
+            var result = eval(input);
+            screen.value = result;
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+
+</script>
+
+
+
+</html>
