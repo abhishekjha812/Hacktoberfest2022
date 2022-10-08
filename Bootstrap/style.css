@@ -1,0 +1,58 @@
+.search-icon {
+  top: 20%;
+  left: 5%;
+}
+.dropmenu {
+  top: 20%;
+  right: 8%;
+}
+.bell {
+  padding: 12px 15px;
+}
+.bg-container {
+  color: rgb(252, 155, 37);
+  background-color: blanchedalmond;
+  padding: 15px 17px;
+}
+.card-1 {
+  width: 22%;
+  border-radius: 10px;
+}
+.python {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.left-arrow {
+  bottom: 40%;
+  left: 0%;
+}
+.right-arrow {
+  bottom: 40%;
+  right: -1%;
+}
+.card-hover {
+  transition: box-shadow 0.5s;
+}
+.card-hover h5 {
+  font-size: 18px;
+}
+.card-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  transition: 0.5s;
+}
+.card-t {
+  line-height: 25px;
+}
+@media (max-width: 991px) {
+  .hide {
+    display: none;
+  }
+  .card-1 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .card-1 {
+    width: 100%;
+  }
+}
