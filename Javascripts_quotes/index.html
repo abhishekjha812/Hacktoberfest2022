@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <center>
+        <div class="page-wrapper">
+            <div class="col-lg-4 m-4">
+                <section class="vh-100" style="background-color: #eee;">
+                    <div class="container py-4 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col col-lg-9 col-xl-7">
+                                <div class="card" style="border-radius: 15px;">
+                                    <div class="card-body p-5">
+                                        <div class="text-center mb-4 pb-2">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+                                                alt="Bulb" width="100">
+                                        </div>
+
+                                        <figure class="text-center mb-0">
+                                            <blockquote class="blockquote">
+                                                <p class="pb-3" id="quotes">
+                                                    <i class="fas fa-quote-left fa-xs text-primary"></i>
+                                                    <span class="lead font-italic"></span>
+                                                    <i class="fas fa-quote-right fa-xs text-primary"></i>
+                                                </p>
+                                    </div>
+
+
+                                    </blockquote>
+                                    <button id="newQ" onclick="getNewQuotes()">New Quotes</button>
+                                    <button id="tweetMe" onclick="tweetNow()">Tweet</button>
+                                    </figure>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </div>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
