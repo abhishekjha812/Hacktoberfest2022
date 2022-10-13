@@ -1,0 +1,74 @@
+
+ 
+<!DOCTYPE html>  
+   
+<html>  
+<head> 
+    <title>Timer</title>  
+    <script lang="javascript" >  
+        var tim;  
+        var minutes = 0;
+        var seconds = ¹5;  
+        var dt = new Date();  
+   
+
+
+function countdown() {  
+document.getElementById("mydiv").style.visibility = "hidden";  
+if (parseInt(seconds) > 0) {  
+seconds = parseInt(seconds) - 1;  
+document.getElementById("showtime").innerHTML = "Your Left Time  is :" + minutes + " Minutes ," + seconds + " Seconds";  
+tim = setTimeout("countdown()", 1000);  
+}  
+else {  
+if (parseInt(seconds) == 0) {  
+minutes = parseInt(minutes) - 1;  
+if (parseInt(seconds) == 0) {  
+clearTimeout(tim);  
+document.getElementById("showtime").style.visibility = "hidden";  
+document.getElementById("mydiv").style.visibility = "visible";  
+ 
+}  
+else {  
+seconds = 60;  
+document.getElementById("showtime").innerHTML = "Your Left Time  is :" + minutes + " Minutes ," + seconds + " Seconds";  
+tim = setTimeout("countdown()", 1000);  
+}  
+}  
+}  
+}  
+ </script>  
+</head>  
+ <body onload="countdown()" >  
+    <form id="form1" runat="server">  
+    <div>  
+      <table width="100%" align="center">  
+        <tr>  
+          <td colspan="2">  
+            <h2>CountDown Start</h2>  
+          </td>  
+        </tr>  
+        <tr>  
+          <td>  
+              <div id="showtime"></div>  
+              <div id="mydiv">  
+                  <h3>Time Up!</h3>  
+              </div>  
+          </td>  
+        </tr>  
+        <tr>  
+          <td>  
+             <br/>  
+            </td>  
+         </tr>  
+      </table>  
+      <br />  
+   </div>  
+    </form>  
+</body>  
+</html> 
+
+
+
+
+
