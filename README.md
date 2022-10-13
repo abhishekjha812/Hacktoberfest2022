@@ -1,8 +1,6 @@
 Folks contribute to this repo if you want , it would be helpful for the community
 https://github.com/abhishekjha812/OpenSource-Links
-```bash
-Folks this repo has been excluded from Hacktoberfest because of so many spammy PRs
-```
+
 
 How to Commit a PR from your local device using git commands 
 
