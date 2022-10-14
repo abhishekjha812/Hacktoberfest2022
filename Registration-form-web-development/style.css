@@ -14,7 +14,7 @@ body{
      display: flex;
      width: 100%;
      
-     background-image: url(/Registration-form-web-development/istockphoto.jpg);
+     background-image: url(img-bg.png);
      padding: 20px;
      border-radius: 30px;
      background-size: cover;
@@ -30,7 +30,7 @@ form{
         padding: 10px;
         border-radius: 20px;
         font-size: 12px;
-        margin-left: 15%;
+        margin-left: 32%;
         border: 3px white solid;
 }
 form h1{
