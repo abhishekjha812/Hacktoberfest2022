@@ -102,3 +102,7 @@ I am intrested in Web Devolopment and Machine Learning.
   My name is Kunal Patil
   I am interested in Devops
 ```
+```bash
+  My name is Henrique Quintana
+  I am interested in Machine learning and HTML/CSS/JS
+```
