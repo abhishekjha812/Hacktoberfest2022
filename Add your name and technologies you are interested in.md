@@ -57,6 +57,10 @@
   I am interested in web development, open-source contributions and competitive programming.
 ```
 ```bash
+  My name is Jeewantha Hiddalarachchi
+  I am interested in Web Development, DevOps and Cloud Security.
+```
+```bash
   My name is Vraj Patel
   I am interested in Cloud Computing, Quantum Computing, Quantum Processor.
 ```
