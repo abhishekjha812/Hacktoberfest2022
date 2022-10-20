@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+    background-image:
+    linear-gradient(to bottom, rgba(221, 221, 221, 0.616), rgba(117, 19, 93, 0.73)),
+    url('imgs/manuel-hodel-dbUFES4uboo-unsplash.jpg');
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin-top: 30px;
+
+}
+header .box{
+    display: flex;
+    gap: 15px;
+    margin-top: 140px;
+    justify-content: center;
+}
+#add-task,#update-task{
+    background-color: white;
+    border: 2px solid rgb(126, 28, 253);
+    padding: 8px 25px;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(126, 28, 253);
+    cursor: pointer;
+}
+#update-task{
+    display: none;
+}
+#task-input{
+    width: 50%;
+    border-radius: 4px;
+    padding: 15px 8px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.tasks{
+    margin: 10px auto 0px;
+    width: 50%;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.tasks .task{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    height: 55px;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    padding: 0 10px;
+
+}
+.tasks .task p{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.tasks .task.finish-task{
+    background-color: rgb(218, 218, 218);
+
+}
+.tasks .task.finish-task p{
+    text-decoration: line-through;
+    color: rgb(68, 68, 68);
+}
+.tasks .task.finish-task label{
+    color: red;
+}
+.task .complet-task,.task .delete-update{
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    font-size: 18px;
+}
+.task .complet-task label{
+    cursor: pointer;
+    transition: .3s;
+}
+.task .complet-task label:hover{
+    color: rgb(112, 255, 112);
+}
+.task .complet-task input{
+    display: none;
+}
+.task .delete-update .fa-pen-to-square{
+    cursor: pointer;
+    transition: .3s;
+}
+.task .delete-update .fa-pen-to-square:hover{
+    color: orange;
+}
+.task .delete-update .fa-xmark{
+    cursor: pointer;
+    transition: .3s;
+}
+.task .delete-update .fa-xmark:hover{
+    color: red;
+}
+.details{
+    margin: auto;
+    width: 50%;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: grid;
+    grid-template-columns: 70% 40%;
+    height: 50px;
+    padding: 0 20px ;
+    align-items: center;
+}
+.details input{
+    background-color: white;
+    border: 1px solid rgb(126, 28, 253);
+    padding: 8px 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: rgb(126, 28, 253);
+    cursor: pointer;
+}
