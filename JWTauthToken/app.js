@@ -95,6 +95,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
+// This is a protected Route so using auth as a middleware
 app.get("/welcome", auth, (req, res) => {
   res.status(200).send("Welcome 🙌 ");
 });
