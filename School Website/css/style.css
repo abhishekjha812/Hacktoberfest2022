@@ -34,7 +34,7 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.hero_section .call_to-btn {}
+
 
 .call_to-btn img {
   width: 18px;
@@ -77,6 +77,13 @@ nav.navbar.navbar-expand-lg {
   color: #f7f6f7;
   text-align: center;
 }
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover
+{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
 
 
 a,
@@ -429,6 +436,11 @@ a:focus {
   font-weight: bold;
 }
 
+.contact_form-container button:hover
+{
+  background: lightgreen;
+}
+
 .contact_img-box {
 
   display: flex;
@@ -501,18 +513,24 @@ a:focus {
 }
 
 .info_section .form_container input::placeholder {
-  color: #ccc8c8;
+  color: black;
 }
 
 .info_section .form_container button {
   background-color: #fdd31d;
   border: none;
   outline: none;
-  color: #fff;
+  color: black;
   padding: 8px 30px;
   margin-top: 15px;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.info_section .form_container button:hover
+{
+  background: yellow;
+
 }
 
 .social_container {
@@ -532,6 +550,11 @@ a:focus {
 .info_section .social-box img {
   width: 35px;
   margin-right: 5px;
+}
+
+.social-box img:hover
+{
+    transform: scale(1.1);
 }
 
 /* end info section */
