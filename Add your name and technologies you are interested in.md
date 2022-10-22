@@ -3,6 +3,11 @@
 ```
 
 ```bash
+  My name is Rahul Kumar Gupta
+  I am interested in Web Development and Blockchain
+```
+
+```bash
   My name is Abhishek Jha
   I am interested in MERN Stack (MogoDB ,Express ,React ,Node) and AI
 ```
