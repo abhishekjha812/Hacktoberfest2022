@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #fefeff;
+  background-color: var(--primary-color);
 }
 
 .layout_padding {
@@ -23,13 +23,29 @@ body {
   padding-bottom: 75px;
 }
 
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+  --third-color:blue;
+}
+.dark-theme{
+  --primary-color:black;
+  --secondary-color:white;
+  --third-color:white;
+}
+
+#darkmode{
+  height: 50px;
+  width: 50px;
+}
+
 .call_to-btn {
   display: inline-block;
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #ffffff;
-  color: #262627;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   transition: all 0.3s ease 0s;
 }
@@ -54,7 +70,7 @@ body {
 }
 
 .main-heading {
-  color: #082465;
+  color: var(--third-color);
   font-weight: bold;
   text-align: center;
 }
@@ -74,7 +90,7 @@ nav.navbar.navbar-expand-lg {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
-  color: #f7f6f7;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -115,7 +131,7 @@ a:focus {
 }
 
 .sub_page .top_container::before {
-  background-color: #fdd31d;
+  background-color: var(--primary-color);
   background-image: none;
 }
 
@@ -126,7 +142,7 @@ a:focus {
   height: 75px;
   bottom: 20%;
   left: 6%;
-  background-color: #fdd31d;
+  background-color: yellowgreen;
 }
 
 
@@ -160,7 +176,7 @@ a:focus {
 .navbar-brand span {
   font-size: 22px;
   font-weight: 700;
-  color: #fefefe;
+  color: var(--primary-color);
 }
 
 .custom_nav-container {
@@ -201,12 +217,12 @@ a:focus {
 }
 
 .hero_detail-box {
-  color: #fefeff;
+  color: var(--secondary-color);
 }
 
 .hero_detail-box h1 {
   font-size: 50px;
-  color: #fefeff;
+  color: var(--secondary-color);
   font-weight: 600;
   width: 70%;
 }
@@ -231,12 +247,12 @@ a:focus {
 
 .common_style h3 {
   font-weight: 600;
-  color: #151516;
+  color: var(--secondary-color);
 }
 
 .common_style p {
   font-weight: 600;
-  color: #4e4f50;
+  color: var(--secondary-color);
   margin: 30px 0 50px 0;
 }
 
@@ -254,7 +270,7 @@ a:focus {
 
 .about_section a {
   background-color: #6ebca8;
-  color: #fefeff;
+  color: var(--primary-color);
 }
 
 /* end about section */
@@ -264,7 +280,7 @@ a:focus {
 
 .admission_section a {
   background-color: #fdd31d;
-  color: #fefeff;
+  color: var(--primary-color);
 }
 
 /* end admission section */
@@ -277,7 +293,7 @@ a:focus {
 
 .why_section a {
   background-color: #6ebca8;
-  color: #fefeff;
+  color: var(--primary-color);
 }
 
 /* end why section */
@@ -287,7 +303,7 @@ a:focus {
 
 .determine_section a {
   background-color: #fdd31d;
-  color: #fefeff;
+  color: var(--primary-color);
 }
 
 
@@ -298,6 +314,7 @@ a:focus {
 .client_section h5,
 .client_section p {
   font-weight: 600;
+  color: var(--secondary-color);
 }
 
 .client_section h2 {
@@ -411,7 +428,7 @@ a:focus {
 .contact_section input {
   border: none;
   outline: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--secondary-color);
   width: 90%;
   margin: 15px 0;
 }
@@ -421,7 +438,7 @@ a:focus {
 .contact_form-container button {
   border: none;
   background-color: #6bd1bd;
-  color: #fff;
+  color: var(--primary-color);
   font-size: 15px;
   padding: 15px 45px;
   border-radius: 30px;
@@ -442,7 +459,7 @@ a:focus {
 
 .contact_section h2 {
   font-size: 26px;
-  color: #010103;
+  color: var(--secondary-color);
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 35px;
@@ -454,8 +471,8 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #363636;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -480,7 +497,7 @@ a:focus {
 }
 
 .info_section ul li a {
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .info_section ul li a:hover {
@@ -501,14 +518,14 @@ a:focus {
 }
 
 .info_section .form_container input::placeholder {
-  color: #ccc8c8;
+  color: var(--primary-color);
 }
 
 .info_section .form_container button {
   background-color: #fdd31d;
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--primary-color);
   padding: 8px 30px;
   margin-top: 15px;
   font-size: 15px;
@@ -518,7 +535,7 @@ a:focus {
 .social_container {
   width: 90%;
   margin: 0 auto;
-  border-top: 1px solid #898989;
+  border-top: 1px solid var(--secondary-color);
   padding: 25px 0;
 }
 
@@ -546,13 +563,13 @@ a:focus {
 }
 
 .footer_section p {
-  color: #fdfdfe;
+  color: var(--primary-color);
   margin: 0;
   text-align: center;
 }
 
 .footer_section a {
-  color: #fdfdfe;
+  color: var(--primary-color);
 }
 
 
