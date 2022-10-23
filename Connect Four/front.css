@@ -1,0 +1,21 @@
+.board button {
+  height: 125px;
+  width: 125px;
+padding: 30px;
+
+  border-radius: 60%;
+  background-color: black;
+  border: 5px solid black;
+}
+body{
+  background-image: url("https://m.media-amazon.com/images/I/817T0DMy8aL._SY355_.jpg");
+}
+.board{
+  background-color:  blue;
+
+}
+
+
+#collapse{
+  text-align: left;
+}
