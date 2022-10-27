@@ -1,0 +1,40 @@
+<style>  
+.button {
+    background-color: #D0FFD6;
+    border: 1px solid black;
+    color: black;
+    font-family: Arial;
+    font-size: small;
+    text-decoration: none;
+    padding: 12px 30px;
+    display: none;
+}
+</style>
+
+<h1>Download the Code</h1>
+
+<!--Adsense Code-->
+<a class="button" href="#" id="download">Download your file</a>
+<!-- Adsense Code-->
+
+<script>  
+var downloadButton = document.getElementById("download");
+var counter = 20;
+var newElement = document.createElement("p");
+newElement.innerHTML = "You can download the file in 20 seconds.";
+var id;
+
+downloadButton.parentNode.replaceChild(newElement, downloadButton);
+
+id = setInterval(function() {
+    counter--;
+    if(counter < 0) {
+        downloadButton.style.display = 'inline';
+        newElement.parentNode.replaceChild(downloadButton, newElement);
+        clearInterval(id);
+    } else {
+        newElement.innerHTML = "You can download the file in " + counter.toString() + " seconds.";
+    }
+}, 1000);
+
+</script>
