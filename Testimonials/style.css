@@ -8,9 +8,10 @@
 body{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: rgb(156, 148, 148);
+    background: #FDF0E0;
     font-size: 13px;
     line-height: 1.7;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
 .testimonials{
@@ -73,7 +74,7 @@ body{
 
 .card--bg-purple{
 
-    background: rgb(199, 152, 220);
+    background: #5C2E7E;
     color: white;
     background-image: url(images/quotation.svg);
     background-repeat: no-repeat;
@@ -82,7 +83,7 @@ body{
 
 .card--bg-gray{
 
-    background: rgb(212, 207, 214);
+    background: #425F57;
     color: white;
     background-repeat: no-repeat;
     background-position: top 10px right 100px;
@@ -98,7 +99,7 @@ body{
 
 .card--bg-peach{
 
-    background: peachpuff;
+    background: #9A1663;
     color: white;
     background-repeat: no-repeat;
     background-position: top 10px right 100px;
