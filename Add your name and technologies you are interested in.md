@@ -41,6 +41,10 @@
   My name is Shubham 
   I am interested in web development
 ```
+```bash
+  My name is Rishi Sahu
+  I am interested in MERN Stack (MogoDB ,Express ,React ,Node)
+```
 
 ```bash
   My name is Ritik Jha
