@@ -1,0 +1,339 @@
+@media screen and (max-width: 639px) {
+
+    #plansSection .plans #basicPlan,
+    #plansSection .plans #standardPlan,
+    #plansSection .plans #premiumPlan {
+        border-radius: 30px;
+
+    }
+
+    #contact {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    body {
+        background-color: #050B16;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2304152b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23031f40' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23022a55' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2301346a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23003E7F' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    header nav {
+        display: none;
+        margin-top: 300px;
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-top: 50px;
+    }
+
+    header .hamburgerMenu {
+        display: inline-block;
+    }
+
+    .mainSection {
+        justify-content: center;
+    }
+
+    .fa-up {
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    .fa-comment-dots {
+        font-size: 2em;
+        margin: 10px;
+    }
+}
+
+@media screen and (width: 768px) {
+    #plansSection #plansTitle {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (width: 1024px) {
+    #plansSection #plansTitle {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #aboutUsSection .textAndImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutUsSection .textAndImg .aboutUsText {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    #aboutUsSection .textAndImg .image {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    #findUsSection .mapAddress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #findUsSection .mapAddress div {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #findUsSection .mapAddress div i {
+        margin-left: 0px;
+    }
+
+    #findUsSection .mapAddress iframe {
+        width: 90%;
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mainSection {
+        height: 600px;
+    }
+
+    .mainSection main .content #text {
+        font-size: 1.5em;
+    }
+
+    .mainSection main .content #startBtn button {
+        font-size: 1.2em;
+    }
+
+    #aboutUsSection .textAndImg .aboutUsText p {
+        font-size: 1.12em;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    header {
+        padding: 60px;
+    }
+
+    header .headerLogo {
+        font-size: 3em;
+    }
+
+    header .headerLogo a img {
+        height: 30px;
+    }
+
+    header nav a {
+        font-size: 2em;
+    }
+
+    .mainSection {
+        height: 1190px;
+    }
+
+    .mainSection main .content {
+        max-width: 900px;
+    }
+
+    .mainSection main .content span {
+        margin: 20px;
+        line-height: 40px;
+    }
+
+    .mainSection main .content #title {
+        font-size: 2.9em;
+    }
+
+    .mainSection main .content #subtitle {
+        font-size: 5.5em;
+    }
+
+    .mainSection main .content #text {
+        font-size: 2em;
+    }
+
+    .mainSection main .content #startBtn {
+        padding: 20px 90px;
+    }
+
+    .mainSection main .content #startBtn::before {
+        font-size: 2em;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        bottom: 7px;
+        left: 7px;
+    }
+
+    #plansSection {
+        min-height: 1000px;
+    }
+
+    #plansSection #plansTitle {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+
+    #plansSection .plans {
+        margin-top: 90px;
+        gap: 40px;
+    }
+
+    #plansSection .plans #basicPlan,
+    #plansSection .plans #standardPlan,
+    #plansSection .plans #premiumPlan {
+        width: 320px;
+        height: 835px;
+    }
+
+    #plansSection .plans h1 {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 3em;
+    }
+
+    #plansSection .plans #standardPlan .popular {
+        font-size: 1.1em;
+        position: absolute;
+        top: 18px;
+        left: 185px;
+    }
+
+    #plansSection .plans .price {
+        font-size: 5.5em;
+    }
+
+    #plansSection .plans .perMonthText {
+        font-size: 1.2em;
+    }
+
+    #plansSection .plans ul {
+        margin-left: 80px;
+        margin-top: 40px;
+        font-size: 1.5em;
+    }
+
+    #plansSection .plans li {
+        margin-left: -65px;
+    }
+
+    #plansSection .plans .purchasePlan {
+        font-size: 1.6em;
+        margin-bottom: 35px;
+    }
+
+    #aboutUsSection {
+        margin-top: 90px;
+    }
+
+    #aboutUsSection .textAndImg {
+        margin-top: 60px;
+    }
+
+    #aboutUsSection .textAndImg .aboutUsText p {
+        font-size: 2.05em;
+        margin-bottom: 11px;
+    }
+
+    #aboutUsSection .textAndImg .image img {
+        width: 100%;
+        box-shadow: -10px 10px 0px #FFD60A;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    #findUsSection {
+        min-height: 800px;
+        background-size: 1200px;
+        margin-top: 50px;
+    }
+
+    #findUsSection .mapAddress {
+        margin-top: 80px;
+    }
+
+    #findUsSection .mapAddress div {
+        font-size: 2.6em;
+    }
+
+    #findUsSection .mapAddress div i {
+        margin-bottom: 15px;
+    }
+
+    #findUsSection .mapAddress div p:first-of-type {
+        font-size: 0.8em;
+    }
+
+    #findUsSection .mapAddress iframe {
+        height: 530px;
+        width: 750px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 10px 10px 0px #FFD60A;
+    }
+
+    #contact {
+        min-height: 250px;
+    }
+
+    #contact .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #contact .contacts p {
+        font-size: 2.3em;
+    }
+
+    #contact .contacts .imgs img {
+        margin: 10px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    #contact .newsletter {
+        font-size: 2.3em;
+    }
+
+    #contact .newsletter input {
+        padding: 12px 21px;
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+
+    #contact .newsletter button {
+        padding: 12px 25px;
+        font-size: 0.8em;
+    }
+
+    #me {
+        font-size: 1.2em;
+    }
+
+    .fa-up {
+        font-size: 5em;
+        margin: 30px;
+    }
+}

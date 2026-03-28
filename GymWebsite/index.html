@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrino Club</title>
+    <script src="./script/script.js" defer></script>
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/mediaqueries.css" rel="stylesheet">
+    <link href="./images/thunderbolt-outline.png" rel="icon">
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="headerLogo">
+                <a href="#">
+                    <div><span>A</span>DRINO </div>
+                    <img src="./images/thunderbolt-white.png" height="15px">
+                </a>
+            </div>
+            <div id="showMenu"></div>
+            <nav>
+                <a href="#plansSection"><span>Plans</span></a>
+                <a href="#aboutUsSection"><span>About us</span></a>
+                <a href="#findUsSection"><span>Find us</span></a>
+                <a href="#contact"><span>Contact</span></a>
+            </nav>
+            <button class="hamburgerMenu"><i class="fa-regular fa-bars"></i></button>
+        </header>
+
+        <section class="mainSection">
+            <main>
+                <div class="content">
+                    <span id="title">ARE YOU READY!</span>
+                    <span id="subtitle">to work out?</span>
+                    <span id="text">Join Adrino and enjoy groundbreaking equipment and monthly workouts. Plus, save
+                        10% with our
+                        introductory membership plan!</span>
+                    <div id="startBtn"><button>START NOW</button></div>
+                </div>
+            </main>
+        </section>
+
+        <section id="plansSection">
+            <h1 id="plansTitle">our <span>special plans</span></h1>
+            <div class="plans">
+                <div id="basicPlan">
+                    <h1>BASIC</h1>
+                    <div class="price">
+                        ₹2200
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
+                </div>
+                <div id="standardPlan">
+                    <div class="popular">POPULAR</div>
+                    <h1>STANDARD</h1>
+                    <div class="price">
+                        ₹5000
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                        <li><i class="fa-regular fa-check"></i> Heated swimming pool</li>
+                        <li><i class="fa-regular fa-check"></i> Sauna</li>
+                        <li><i class="fa-regular fa-check"></i> Crossfit area</li>
+                        <li><i class="fa-regular fa-check"></i> Martial arts classes</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
+                </div>
+                <div id="premiumPlan">
+                    <h1>PREMIUM</h1>
+                    <div class="price">  ₹8500
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                        <li><i class="fa-regular fa-check"></i> Heated swimming pool</li>
+                        <li><i class="fa-regular fa-check"></i> Sauna</li>
+                        <li><i class="fa-regular fa-check"></i> Crossfit area</li>
+                        <li><i class="fa-regular fa-check"></i> Martial arts classes</li>
+                        <li><i class="fa-regular fa-check"></i> Personal trainer</li>
+                        <li><i class="fa-regular fa-check"></i> Dietician, diet plans and meal guides</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutUsSection">
+            <div class="textAndImg">
+                <div class="image"><img src="./images/gym.jpg"></div>
+                <div class="aboutUsText">
+                    <p>
+                        <span><span>A</span>drino</span> is a premium Health and Fitness space in the heart of the
+                        city. We provide our members with the best workouts coupled with personal training to achieve their fitness goals.
+                        Our memberships are designed for those who love to train hard and crave variety in their workouts.
+                    </p>
+                    <p>
+                        Our mission is to change the way people live by transforming the fitness industry. Blackbox was
+                        created in 2010 out of a need for a revolutionary training environment that focused on our
+                        members' health and lifestyle, not just their physical appearance. We want to create a community
+                        where people can get healthy together. We pride ourselves on getting you
+                        results through carefully crafted programs, expertly designed spaces and equipment and great
+                        music!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="findUsSection">
+            <div class="mapAddress">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Find us at</p>
+                    <p>Random Avenue Street, n°123</p>
+                    <p>Somewhere, some country</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14698542.067649886!2d0.6370140690706954!3d-77.00568927886005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x68b8066308a0300f%3A0x54d79b0bb6ab56f8!2sOceano%20Pac%C3%ADfico%20Sul!5e0!3m2!1spt-BR!2sbr!4v1645474163798!5m2!1spt-BR!2sbr"
+                    width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="contacts">
+                <p>Our social media</p>
+                <div class="imgs">
+                    <img src="./images/facebook1.png" height="35px">
+                    <img src="./images/instagram1.png" height="35px">
+                    <img src="./images/twitter1.png" height="35px">
+                    <img src="./images/whatsapp1.png" height="35px">
+                    <img src="./images/email.png" height="35px">
+                </div>
+            </div>
+            <span><img src="./images/thunderbolt-white.png" height="55px"></span>
+            <div class="newsletter">
+                <p>Subscribe to our newsletter</p>
+                <input type="email" placeholder="mail@example.com">
+                <button>Submit</button>
+            </div>
+            <p id="me">MADE by <a href="https://github.com/aniket-2002" target="_blank">Aniket</a></p>
+        </footer>
+    </div>
+    <i class="fa-solid fa-up"></i>
+</body>
+
+</html>
