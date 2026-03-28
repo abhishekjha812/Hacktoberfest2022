@@ -14,7 +14,7 @@
 }
 
 .flex-child:first-child {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 /* Add padding to containers */
 .container {
@@ -38,7 +38,7 @@ input[type="number"]:focus {
   outline: none;
 }
 #heading1 {
-  margin-top: 0px;
+  margin-top: 20px;
   text-align: center;
   font-size: 40px;
 }
@@ -69,8 +69,8 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #340ea8;
-  color: white;
+  background-color: purple;
+  color: pink;
   padding: 16px 20px;
   margin: 8px 0;
   border: none;
@@ -84,6 +84,7 @@ hr {
 
 .registerbtn:hover {
   opacity: 1;
+
 }
 
 /* Add a blue text color to links */
@@ -94,12 +95,12 @@ a {
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
-  background-color: #f1f1f1;
+  background-color:black;
   text-align: center;
 }
 
 /* --------------------------------------------------------------------------------- */
-#myTable,
+myTable,
 th,
 td {
   border: 2px solid rgb(214, 130, 130);
@@ -111,19 +112,19 @@ td {
   padding: 10px;
 }
 th {
-  background-color: rgb(175, 173, 173);
+  background-color: blue(175, 173, 173);
 }
-#myTable#alter tr:nth-child(even) {
+myTable#alter tr:nth-child(even) {
   background-color: rgb(230, 89, 89);
 }
-#myTable#alter tr:nth-child(odd) {
+myTable#alter tr:nth-child(odd) {
   background-color: rgb(197, 38, 38);
 }
-#myTable#alter th {
-  color: white;
-  background-color: gray;
+myTable#alter th {
+  color: red;
+  background-color: black;
 }
-#record {
+record {
   display: flex;
   justify-content: center;
 }
@@ -144,16 +145,20 @@ th {
   margin-bottom: 12px;
 }
 
-#myTable {
+Table {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 18px;
+  background-image:linear-gradient(mediumslateblue,lavender);
+ 
+  
 }
 
-#myTable th, #myTable td {
+myTable th, myTable td {
   text-align: left;
   padding: 12px;
+  background-color:blue;
 }
 
 #myTable tr {
@@ -163,3 +168,5 @@ th {
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+h1{
+	background-image:linear-gradient(purple,pink);
