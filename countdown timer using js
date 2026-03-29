@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+p {
+text-align: center;
+font-size: 80px;}
+</style>
+</head>
+<body>
+<p id="timer"></p>
+<script>
+var deadline = new Date("Jan 5, 2018 15:37:25").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var t = deadline - now;
+var day = Math.floor(t / (1000 * 60 * 60 * 24));
+var hrs = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var min = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var sec = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("timer").innerHTML = day + "d "
++ hrs + "h " + min + "m " + sec + "s ";
+	if (t < 0) {
+		clearInterval(x);
+		document.getElementById("timer").innerHTML = "TIMEUP";}
+}, 1000);
+</script>
+</body>
+</html>
