@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+    body{
+        background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqJzd42e-UyXGppaftgjOwWRneIWnqIm537ea0gAKb65LiJOQoThKPEjX-Zr4GBdCybU&usqp=CAU')}
+        </style>
+</head>
+<body>
+    <!--<style background-image:url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg')></style>-->
+    <center><h2 ><span style="color:blue">STUDENT REGISTRATION FORM</span></h2></center>
+    <form>
+        <fieldset>
+            <p>First Name:<input type="text" name="Name" value="" required></p>
+            <p>Last Name:<input type="text" name="Name" value=""></p>
+            <p>Date Of Birth:<input type="date" name="DOB" value="" required></p>
+            <p>EmailID:<input type="email" name="Email" value="" required></p>
+            <p>Mobile No:<input type="text" name="Mobile No" value="" required maxlength=10></p>
+            <p>Gender:<input type="radio" name="gender" value="">Male
+            <input type="radio" name="gender" value="">Female</p>
+            <p>Address:<textarea name="address" rows="4" cols="30" required></textarea></p>
+            <p>CITY:<input type="text" name="city" required max="30"></p>
+            <p>State:<input type="text" name="state" required max="30"></p>
+            <p>PIN:<input type="text" name="pincode" required maxlength="6"></p>
+            <p>COUNTRY:<input type="text" name="country" required max="30"></p>
+            <p>HOBBIES:
+                <input type="checkbox" name="hobbies" value="">Dancing
+                <input type="checkbox" name="hobbies" value="">Singing
+                <input type="checkbox" name="hobbies" value="">Drawing
+                <input type="checkbox" name="hobbies" value="">Sketching
+                <input type="checkbox" name="hobbies" value="">Others
+                <input type="text" name="hobbies" value="">
+            </p>
+            <p>QUALIFICATION:
+                <fieldset>
+                <table>
+                    <tr>
+                        <th><b>Sr.No</b></th>
+                        <th><b>Examination</b></th>
+                        <th><b>Board</b></th>
+                        <th><b>Percentage</b></th>
+                        <th><b>Year of Passing</b></th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Class X</td>
+                        <td><input type="text" name="board" value="" required></td>
+                        <td><input type="number" name="percentage" value="" required></td>
+                        <td><input type="number" name="year of passing" value="" required size="4"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Class XII</td>
+                        <td><input type="text" name="board" value="" required></td>
+                        <td><input type="number" name="percentage" value="" required></td>
+                        <td><input type="number" name="year of passing" value="" required size="4"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Graduation</td>
+                        <td><input type="text" name="board" value="" required></td>
+                        <td><input type="number" name="percentage" value="" required></td>
+                        <td><input type="number" name="year of passing" value="" required size="4"></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </p>
+            <p>Courses applied for:<input type="checkbox" value="">BCA 
+                <input type="checkbox" value="">B.Com 
+                <input type="checkbox" value="">B.A 
+                <input type="checkbox" value="">B.Sc 
+            </p>
+            <p><input type="button" value="Submit">            
+                <input type="button" value="Reset"></p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
