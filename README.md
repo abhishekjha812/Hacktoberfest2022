@@ -2,7 +2,7 @@ Folks contribute to this repo if you want , it would be helpful for the communit
 https://github.com/abhishekjha812/OpenSource-Links
 
 
-How to Commit a PR from your local device using git commands 
+How to Commit a PR from your local device using git commands ?
 
 - Before using git commands you have to download the latest version of git on your device 
 - for that watch the video below , it will help you with installing git to making your first PR
@@ -14,11 +14,11 @@ How to Commit a PR from your local device using git commands
 
 - Run the following commands into a terminal window (Command Prompt, Powershell, Terminal, Bash, ZSH). Do this to download the forked copy of this repository to your computer.
 - 
-- ```bash
+- `````bash
   git clone https://github.com/YOUR_GITHUB_USERNAME/hacktoberfest-practice.git
 ```
 
-- Switch to the cloned folder. You can paste this command into the same terminal window.
+- Switch to the cloned folder. You can paste this command into the same terminal window !
 
 ```bash
   cd hacktoberfest-practice
@@ -26,7 +26,7 @@ How to Commit a PR from your local device using git commands
 
 - Make a new branch. Your username would make a good branch because it's unique.
 
-```bash
+`````bash
   git checkout -b <name-of-new-branch>
 ```
 
@@ -34,7 +34,7 @@ How to Commit a PR from your local device using git commands
 
 - **Add your name to the section that matches your Initial in [this list](https://github.com/EddieHubCommunity/hacktoberfest-practice#hacktoberfest-community). Then, add your name in alphabetical order. Then save your changes.**
 
-- For example
+- For example !
   - ```bash
        ADD YOUR NAME AND TECHNOLOGIES YOU ARE INTRESTED IN
     ```
