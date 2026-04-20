@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: rgb(249, 241, 15);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    text-shadow: 5px 5px #3f3d3d;
+    margin-top: 0px;
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    margin-top: 2px;
+    font-size: 2rem;
+    text-shadow: 2px 2px #3f3d3d;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.player {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+p {
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+img{
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 10px;
+}
